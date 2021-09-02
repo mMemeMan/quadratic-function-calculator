@@ -1,0 +1,189 @@
+#pane, .root, .split-pane{
+    -fx-background-color: #353434;
+    -fx-foreground-color: #353434;
+}
+
+.default-color0.chart-series-line { -fx-stroke: #2c2e4e; }
+
+.chart-vertical-zero-line {
+    -fx-stroke: white;
+}
+.chart-horizontal-zero-line {
+    -fx-stroke: white;
+}
+
+.chart-plot-background {
+    -fx-background-color: #575758;
+    -fx-foreground-color: white;
+    -fx-stroke: white;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke: #898887;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #898887;
+}
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}
+
+.axis {
+    -fx-stroke: white;
+    -fx-fill: white;
+    -fx-font-size: 1.4em;
+    -fx-tick-label-fill: white;
+    -fx-font-family: Tahoma;
+    -fx-tick-length: 0;
+    -fx-minor-tick-length: 0;
+}
+
+.background {
+    -fx-background-color: #674A44;
+    -fx-foreground-color: #353434;
+}
+
+.button {
+    -fx-padding: 5 22 5 22;
+    -fx-border-color: #353434;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: derive(#353434,20%);
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 20pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+.button:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+.button:pressed, .button:default:hover:pressed {
+    -fx-background-color: #bdbcbc;
+    -fx-text-fill: black;
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #353434;
+    -fx-text-fill: white;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+
+.text-area .content {
+    -fx-text-fill: none;
+    -fx-background-color: #575758;
+    outline: none;
+}
+.text-field {
+    -fx-background-color: derive(#353434,20%);
+    -fx-text-fill: #d8d8d8;
+}
+/*-------------------------------*/
+#headline {
+    -fx-background-color: #FED650;
+}
+
+#text_area {
+    -fx-background-color: #3A3639;
+    -fx-border-color: #3A3639;
+    -fx-background-radius: 0;
+    -fx-padding: 0,0,0,0;
+    -fx-text-fill: WHITE;
+}
+
+.titled-pane
+{
+    -fx-skin: "com.sun.javafx.scene.control.skin.TitledPaneSkin";
+    -fx-text-fill: white;
+}
+.titled-pane:focused
+{
+    -fx-text-fill: white;
+}
+.titled-pane > .title
+{
+    -fx-background-color: #353434;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+}
+
+.titled-pane:focused > .title
+{
+    -fx-background-color: #bdbcbc;
+    -fx-text-fill: black;
+}
+
+.titled-pane > .title > .arrow-button
+{
+    -fx-background-color: null;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 0.0em 0.25em 0.0em 0.0em; /* 0 3 0 0 */
+}
+.titled-pane:hover{
+    -fx-background-color: #3a3a3a;
+}
+.titled-pane > .title > .arrow-button .arrow
+{
+    -fx-background-color: #353434;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.25em 0.3125em 0.25em 0.3125em; /* 3 3.75 3 3.75 */
+    -fx-shape: "M 0 0 h 7 l -3.5 4 z";
+}
+
+.titled-pane:collapsed > .title > .arrow-button .arrow
+{
+    -fx-rotate: -90;
+}
+
+.titled-pane > *.content
+{
+    -fx-background-color:
+            #353434;
+    -fx-padding: 0.167em;
+}
+
+.titled-pane:focused > .title > .arrow-button .arrow
+{
+    -fx-background-color: #353434;
+}
+
+.progress-bar .bar {
+    -fx-background-color:
+            -fx-box-border,
+            linear-gradient(to bottom, peachpuff, #E97E03),
+            #FED650; /* this line is the background color of the bar */
+    -fx-background-insets: 0, 1, 2;
+    -fx-padding: 0.416667em; /* 5 */
+}
+
+.root {
+    /* A bright blue for highlighting/accenting objects.  For example: selected
+     * text; selected items in menus, lists, trees, and tables; progress bars;
+     * default buttons.
+     */
+    -fx-accent: #E99E03;
+
+
+    /* A bright blue for the focus indicator of objects. Typically used as the
+     * first color in -fx-background-color for the "focused" pseudo-class. Also
+     * typically used with insets of -1.4 to provide a glowing effect.
+     *
+     * TODO: should this be derived from -fx-accent?
+     */
+    -fx-focus-color: #E99E03;
+}
+
